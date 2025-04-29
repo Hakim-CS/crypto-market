@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: crypto-sweep.netlify.app
+**URL**: https://crypto-sweep.netlify.app/
 
 ## How can I edit this code?
 
