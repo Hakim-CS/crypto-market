@@ -15,17 +15,17 @@ Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes. 
 
 
 Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone https://github.com/hakim-cs/track-crypto.git
+git clone https://github.com/hakim-cs/crypto-market.git
 
 # Step 2: Navigate to the project directory.
-cd track-crypto
+cd crypto-market
 
 # Step 3: Install the necessary dependencies.
 npm i
