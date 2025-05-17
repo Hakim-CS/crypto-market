@@ -61,6 +61,45 @@ export default function Education() {
       ]
     }
   ];
+  // added new 
+  const faqs = [
+  {
+    questionKey: "faqWhatIsCrypto",
+    answerKey: "faqWhatIsCryptoAnswer",
+  },
+  {
+    questionKey: "faqIsCryptoSafe",
+    answerKey: "faqIsCryptoSafeAnswer",
+  },
+  {
+    questionKey: "faqHowToStart",
+    answerKey: "faqHowToStartAnswer",
+  },
+];
+// add a new tab
+  <TabsTrigger value="faq" className="rounded-none data-[state=active]:border-b-2 data-[state=active]:border-primary py-4 px-6">
+  <BookOpen className="mr-2 h-4 w-4" />
+  {t('faq')}
+</TabsTrigger>
+
+  // tab content 
+  <TabsContent value="faq" className="mt-0">
+  <div className="space-y-4">
+    {faqs.map((faq, idx) => (
+      <Card key={idx} className="overflow-hidden transition-all hover:shadow-md">
+        <CardHeader>
+          <CardTitle className="text-base flex items-center gap-2">
+            <BookOpen className="h-4 w-4 text-primary" />
+            {t(faq.questionKey)}
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <p>{t(faq.answerKey)}</p>
+        </CardContent>
+      </Card>
+    ))}
+  </div>
+</TabsContent>
 
   // Crypto news sources
   const newsSources = [
